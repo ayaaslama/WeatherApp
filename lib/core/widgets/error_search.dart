@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/widgets/button.dart';
+import 'package:weather_app/core/widgets/button.dart';
 
 class ErrorSearch extends StatelessWidget {
   const ErrorSearch({super.key});

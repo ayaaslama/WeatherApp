@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:weather_app/cubits/get_weather_cubit/get_weather_cubit.dart';
-import 'package:weather_app/cubits/get_weather_cubit/get_weather_states.dart';
-import 'package:weather_app/pages/home_page.dart';
+import 'package:weather_app/core/helper/constant.dart';
+import 'package:weather_app/features/logic/cubits/get_weather_cubit/get_weather_cubit.dart';
+import 'package:weather_app/features/logic/cubits/get_weather_cubit/get_weather_states.dart';
+import 'package:weather_app/features/pages/home_page.dart';
 
 void main() {
   runApp(const WeatherApp());
@@ -38,17 +39,5 @@ class WeatherApp extends StatelessWidget {
         );
       }),
     );
-  }
-}
-
-MaterialColor getThemeColor(String? condition) {
-  if (condition == null) {
-    return Colors.amber;
-  } else if (condition == 'Sunny') {
-    return Colors.deepOrange;
-  } else if (condition == 'Heavy Snow' || condition == 'Moderate rain') {
-    return Colors.lightBlue;
-  } else {
-    return Colors.blueGrey;
   }
 }

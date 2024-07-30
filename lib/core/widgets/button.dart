@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/pages/search_page.dart';
+import 'package:weather_app/features/pages/search_page.dart';
 
 class Button extends StatelessWidget {
   const Button({
